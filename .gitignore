@@ -1,0 +1,16 @@
+*.env
+*.env.local
+*.env.stage
+*.env.prod
+*.pem
+*.der
+*.cert
+
+yoyo.ini
+
+node_modules
+
+__pycache__/
+scripts/
+queries/
+

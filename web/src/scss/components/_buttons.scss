@@ -1,0 +1,25 @@
+@import "../abstracts/variables.scss";
+
+.button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  &-primary {
+    background-color: $sonar-blue;
+    &:hover {
+      background-color: $light-sonar-blue;
+    }
+  }
+
+  &-secondary {
+    background-color: $sonar-yellow;
+    &:hover {
+      background-color: $light-sonar-purple;
+    }
+  }
+}

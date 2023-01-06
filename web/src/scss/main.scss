@@ -1,0 +1,19 @@
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./components/navbar";
+@import "./components/onboarding";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $dusty-white;
+  font-family: "Poppins";
+  color: $midnight;
+}

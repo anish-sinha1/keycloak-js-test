@@ -1,19 +1,20 @@
-@import "../../scss/abstracts/variables.scss";
-
 .nav {
-  height: 15%;
+  position: sticky;
+  width: 100%;
   background-color: $white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 100000;
 }
 
-.guest {
+.nav-guest {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
-.guest-img {
+.nav-guest-img {
   max-width: 20%;
+  min-height: 6rem;
   padding-top: 1%;
   padding-bottom: 1%;
   @media screen and (max-width: $xl-screen) {
@@ -28,4 +29,13 @@
   @media screen and (max-width: $medium-mobile) {
     max-width: 45%;
   }
+}
+
+.nav-client {
+  display: flex;
+}
+
+.nav-client-action {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
 }

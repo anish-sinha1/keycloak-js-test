@@ -1,0 +1,31 @@
+@import "../../scss/abstracts/variables.scss";
+
+.nav {
+  height: 15%;
+  background-color: $white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.guest {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.guest-img {
+  max-width: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  @media screen and (max-width: $xl-screen) {
+    max-width: 17.5%;
+  }
+  @media screen and (max-width: $large-screen) {
+    max-width: 25%;
+  }
+  @media screen and (max-width: $tablet) {
+    max-width: 25%;
+  }
+  @media screen and (max-width: $medium-mobile) {
+    max-width: 45%;
+  }
+}

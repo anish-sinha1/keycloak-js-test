@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import * as auth from "./auth/keycloak";
 
@@ -15,6 +15,6 @@ const render = () =>
     </React.StrictMode>
   );
 
-auth.initKeycloak(render);
+auth.init(render);
 
 // reportWebVitals();

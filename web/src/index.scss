@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$black: black;
+$tablet: 768px;
+
+:root {
+  /* breakpoints */
+  --small-mobile: 320px;
+  --medium-mobile: 480px;
+  --tablet: 768px;
+  --small-screen: 1024px;
+  --large-screen: 1200px;
+  --xl-screen: 1400px;
+
+  /* colors */
+  --white: rgba(255, 255, 255, 1);
+  --dusty-white: rgba(249, 249, 249, 1);
+  --error-one: rgba(254, 229, 226, 1);
+  --error-two: rgba(246, 145, 132, 1);
+  --error-three: rgba(221, 92, 76, 1);
+  --error-four: rgba(198, 49, 30, 1);
+  --sonar-yellow: rgba(254, 198, 1, 1);
+  --success-one: rgba(234, 251, 244, 1);
+  --success-two: rgba(132, 240, 196, 1);
+  --success-three: rgba(55, 222, 154, 1);
+  --success-four: rgba(4, 193, 116, 1);
+  --serene-blue: rgba(194, 238, 255, 1);
+  --light-sonar-blue: rgba(148, 218, 245, 1);
+  --medium-sonar-blue: rgba(90, 184, 220, 1);
+  --sonar-blue: rgba(44, 163, 209, 1);
+  --sonar-blue-contrast: rgba(1, 96, 153, 1);
+  --lilac: rgba(237, 197, 255, 1);
+  --light-sonar-purple: rgba(222, 150, 255, 1);
+  --medium-sonar-purple: rgba(208, 115, 250, 1);
+  --sonar-purple: rgba(190, 101, 230, 1);
+  --disabled-gray: rgba(148, 148, 148, 1);
+  --medium-gray: rgba(74, 74, 74, 1);
+  --midnight: rgba(29, 29, 29, 1);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dusty-white);
+}

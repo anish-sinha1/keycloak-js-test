@@ -4,6 +4,13 @@
   background-color: $white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 100000;
+  &-profile {
+    &-dropdown {
+      position: absolute;
+      right: 10%;
+      top: 120%;
+    }
+  }
 }
 
 .nav-guest {
@@ -32,10 +39,48 @@
 }
 
 .nav-client {
-  display: flex;
+  display: grid;
+  width: 100%;
+  &-img {
+    justify-self: left;
+    margin-left: 1rem;
+    height: 50%;
+  }
+  &-action {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 1.25rem;
+  }
+
+  &-about,
+  &-faq,
+  &-contact,
+  &-avatar {
+    cursor: pointer;
+    position: relative;
+  }
+  &-avatar {
+    justify-self: end;
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+    transition: all 0.3s;
+  }
 }
 
-.nav-client-action {
+.nav-profile-dropdown {
+  transition: all 0.3s;
+  z-index: 100000;
+  background-color: $sonar-yellow;
+  width: 15rem;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 0.25rem;
+  justify-items: center;
+  align-items: center;
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }

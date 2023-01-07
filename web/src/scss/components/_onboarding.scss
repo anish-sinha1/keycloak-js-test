@@ -5,18 +5,22 @@
   height: 100%;
   width: 100%;
   color: $dusty-white;
-}
-
-.onboarding-landing-items {
-  text-align: center;
-  &__heading {
-    font-size: 2rem;
+  &-items {
+    text-align: center;
+    &__heading {
+      font-size: 2rem;
+    }
+    margin-top: 15%;
+    display: grid;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
   }
-  margin-top: 15%;
-  display: grid;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  justify-items: center;
+  &-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }

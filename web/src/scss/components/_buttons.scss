@@ -9,6 +9,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  &-bare {
+    padding: 0;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+
   &-primary {
     background-color: $sonar-blue;
     &:hover {
@@ -20,6 +26,12 @@
     background-color: $sonar-yellow;
     &:hover {
       background-color: $light-sonar-purple;
+    }
+  }
+  &-accent {
+    background-color: $sonar-purple;
+    &:hover {
+      background-color: $light-sonar-blue;
     }
   }
 }

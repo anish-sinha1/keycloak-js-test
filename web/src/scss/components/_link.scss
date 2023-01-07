@@ -1,0 +1,8 @@
+.link {
+  text-decoration: none;
+  color: $midnight;
+  font-weight: 600;
+  &-bare {
+    font-size: 1rem;
+  }
+}

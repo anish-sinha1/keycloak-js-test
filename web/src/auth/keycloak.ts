@@ -25,5 +25,5 @@ export const getUsername = () => _kc.tokenParsed?.preferred_username;
 export const getAccessTokenSilently = () => _kc.token;
 export const hasRealmRole = (roles: any) =>
   roles.some((role: any) => _kc.hasRealmRole(role));
-export const hasResourceRole = (roles: any) =>
-  roles.some((role: any) => _kc.hasResourceRole(role));
+export const hasResourceRole = (roles: any, clientId?: string) =>
+  roles.some((role: any) => _kc.hasResourceRole(role, clientId || "sonar_api"));

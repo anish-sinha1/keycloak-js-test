@@ -5,6 +5,7 @@ const _kc = new Keycloak("/keycloak.json");
 export const init = async (onAuthenticatedCallback: any) => {
   const authenticated = await _kc.init({
     onLoad: "check-sso",
+    checkLoginIframe: false,
     silentCheckSsoRedirectUri:
       window.location.origin + "/silent-check-sso.html",
     pkceMethod: "S256",
@@ -23,6 +24,7 @@ export const updateToken = (successCallback: any) =>
   _kc.updateToken(5).then(successCallback).catch(login);
 export const getUsername = () => _kc.tokenParsed?.preferred_username;
 export const getAccessTokenSilently = () => _kc.token;
+export const getIdTokenSilently = () => _kc.idToken;
 export const hasRealmRole = (roles: any) =>
   roles.some((role: any) => _kc.hasRealmRole(role));
 export const hasResourceRole = (roles: any, clientId?: string) =>

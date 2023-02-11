@@ -28,6 +28,15 @@
       background-color: $light-sonar-purple;
     }
   }
+
+  &-tertiary {
+    background-color: $light-sonar-blue;
+    &:hover {
+      background-color: $sonar-blue-contrast;
+      color: $white;
+    }
+  }
+
   &-accent {
     background-color: $sonar-purple;
     &:hover {

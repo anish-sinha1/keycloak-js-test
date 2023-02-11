@@ -7,8 +7,6 @@ export const useKeycloak = (setLoading?: (state: boolean) => any) => {
   const getToken = async () => {
     const token = auth.getAccessTokenSilently();
     setToken(token);
-    console.log(token);
-    console.log(auth.hasResourceRole(["youth"], "sonar_api"));
   };
   useEffect(() => {
     getToken();

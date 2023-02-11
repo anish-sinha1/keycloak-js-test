@@ -1,6 +1,6 @@
 {
-  "realm": "Sonar",
-  "auth-server-url": "http://localhost:8080/auth",
+  "realm": "sonar_beta",
+  "auth-server-url": "https://auth.sonarmentalhealth.com/",
   "ssl-required": "external",
   "resource": "sonar_web",
   "public-client": true,
